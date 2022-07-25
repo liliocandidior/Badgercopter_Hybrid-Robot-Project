@@ -16,7 +16,7 @@
     https://www.arducam.com/product/8mp-imx179-with-150-wide-angle-m12-lens-camera-module-arducam-ub0239/
     
   - usb2.0
-  - compatible with linux, MACOS, Windows 7/8/10
+  - compatible with linux, MacOS, Windows 7/8/10
   - 30fps@1080p
   - 150-degree wide angle
   - ultra HD
@@ -33,7 +33,8 @@
    *Dependencies:*
    - UVC driver
    - OpenCV >3.0
-   - ARUCO >3.0
+   - OpenCV-contrib
+   - ArUco >3.0
    - Dronekit
     
  ***for MacOS**\
