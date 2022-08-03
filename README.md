@@ -21,12 +21,6 @@
   - 150-degree wide angle
   - ultra HD
     
- **UP HD camera*
-    https://up-shop.org/up-hd-camera.html
-  - usb2.0
-  - compatible with linux, Windows 10
-  - 30fps@1080p
-  - full HD
     
 ### Setting Up Operating Environment
 
