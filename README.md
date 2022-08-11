@@ -79,19 +79,21 @@
     
    - build ArUco via cmake
      ```
-     unzip aruco-3.0.12.zip
-     cd aruco-3.0.12
-     mkdir build
-     cd build
-     cmake ..
+     unzip aruco-3.1.15.zip
+     cd aruco-3.1.15
+     cmake .
      make
      sudo make install
      ```
 
     
 ### Get Landing Markers
+    
+    Calibration >> aruco_calibration_grid_board_a4.pdf
 
 ### Camera Calibration
+
+    calibration matrix saved to Calibration >> arducam_calibration.yml
 
 ### Python Script for Marker Detection
 
