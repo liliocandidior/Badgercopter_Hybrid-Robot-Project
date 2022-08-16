@@ -89,11 +89,11 @@
     
 ### Get Landing Markers
     
-    Calibration >> aruco_calibration_grid_board_a4.pdf
+  Calibration << aruco_calibration_grid_board_a4.pdf
 
 ### Camera Calibration
 
-    calibration matrix saved to Calibration >> arducam_calibration.yml
+  Calibration << arducam_calibration.yml
 
 ### Python Script for Marker Detection
 
