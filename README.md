@@ -85,7 +85,8 @@
      make
      sudo make install
      ```
-
+***for Ubuntu 20.04**\
+  https://linuxize.com/post/how-to-install-opencv-on-ubuntu-20-04/
     
 ### Get Landing Markers
     
