@@ -1,4 +1,16 @@
 # Hybrid Robot Project --Badgercopter
+
+## Ubuntu 20.04 install
+https://github.com/up-board/up-community/wiki/Ubuntu_20.04
+
+skip HAT -- cannnot locate upboard-extras
+
+## ROS1 with MAVROS install
+https://docs.px4.io/v1.13/en/ros/ros1.html\
+sudo apt install geographiclib-tools\
+sudo geographiclib-get-geoids all\
+sudo apt install ros-melodic-desktop-full  --error! cannot locate package
+
 ## Vision-based Precise Landing
 
 ### Choose Appropriate Camera
