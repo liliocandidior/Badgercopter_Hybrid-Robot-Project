@@ -6,10 +6,20 @@ https://github.com/up-board/up-community/wiki/Ubuntu_20.04
 skip HAT -- cannnot locate upboard-extras
 
 ## ROS1 with MAVROS install
-https://docs.px4.io/v1.13/en/ros/ros1.html\
-sudo apt install geographiclib-tools\
-sudo geographiclib-get-geoids all\
+https://docs.px4.io/v1.13/en/ros/ros1.html
+```
+sudo apt install geographiclib-tools
+sudo geographiclib-get-geoids all
 sudo apt install ros-melodic-desktop-full  --error! cannot locate package
+```
+```
+The following packages have unmet dependencies:
+ ros-noetic-desktop-full : Depends: ros-noetic-desktop but it is not going to be installed
+                           Depends: ros-noetic-perception but it is not going to be installed
+                           Depends: ros-noetic-simulators but it is not going to be installed
+                           Depends: ros-noetic-urdf-sim-tutorial but it is not going to be installed
+E: Unable to correct problems, you have held broken packages.
+```
 
 ## Vision-based Precise Landing
 
