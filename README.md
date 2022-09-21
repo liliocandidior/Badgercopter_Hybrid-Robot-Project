@@ -20,6 +20,7 @@ The following packages have unmet dependencies:
                            Depends: ros-noetic-urdf-sim-tutorial but it is not going to be installed
 E: Unable to correct problems, you have held broken packages.
 ```
+9/20/2022 complete ROS install and workspace creation
 
 ## Vision-based Precise Landing
 
