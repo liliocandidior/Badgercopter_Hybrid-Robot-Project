@@ -1,4 +1,4 @@
-# ROS2 - PX4 Bridge Setup (Stall)
+# ROS2 - PX4 Bridge Setup
 ** This work is ended due to failure of command transmission from companion computer to flight controller **
 ## Companion Computer Setup
  - Install Linux and enable wifi connection
