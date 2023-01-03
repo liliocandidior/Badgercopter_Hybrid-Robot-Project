@@ -1,5 +1,3 @@
-# Hybrid Robot Project --Badgercopter
-
 ## Ubuntu 20.04 install
 https://github.com/up-board/up-community/wiki/Ubuntu_20.04
 
