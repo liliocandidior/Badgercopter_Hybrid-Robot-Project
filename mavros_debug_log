@@ -1,9 +1,0 @@
-This file is the debug log for Mavros-PX4 packages.
-
-10/04/22
-Case: Launch PX4 Gazebo
-Error: Process dead, exit code 255
-Solution:
-sudo killall rosmaster
-sudo killall gzserver
-sudo killall gzclient
