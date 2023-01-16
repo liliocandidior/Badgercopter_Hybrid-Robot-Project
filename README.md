@@ -36,7 +36,11 @@ Quadcopter Camera | 1 | [ArduCam](https://www.amazon.com/Arducam-Camera-Micropho
 
 ### Software
 
-The functionality of the system can only be achieved by having multiple agents running synchronously. Shown in the figure below, ROS on the onboard computer will serve as human interface to control the quadcopter. Users can use multi-ROS under same ROS master to achieve remote control of onboard computer, or simply ssh into the computer to achieve remote control. Then
+The functionality of the system can only be achieved by having multiple agents running synchronously. Shown in the figure below, ROS on the onboard computer will serve as human interface to control the quadcopter. Users can use multi-ROS under same ROS master to achieve remote control of onboard computer, or simply ssh into the computer to achieve remote control. The message published or subscribed in ROS will seek for counterparts in MAVROS (ROS1) or RTPS (ROS2). Then messages will be decoded and transmitted to the requested port (the usb port to ftdi board), with requested protocol (UART for experiment, UDP for sitl simulation). Then, on the flight controller side, messages will be then encoded after being acquired through the telemetry port and goes to the uORB topic, which is the real time parameter in PX4 system. On the other side, when information is requested, the workflow will go the other way from PX4 to onboard computer.
+
+<p align="center">
+  <img src="https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/main/figures/communication.png" width=70% height=70% alt>
+</p>
 
 ## Resources
 
