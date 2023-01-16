@@ -8,11 +8,18 @@ We will cover the structure of the system both in hardware and software.
 
 ### Hardware
 
-Shown in figure below, there are twi modules for the system, the quadcopter module and the ground vehicle module. Quadcopter module is powered up by the 4s-lipo battery, which will delivered power to BEC, which will help to deliver power to all devices. Battery power will also go through buck converter to have a stable voltage supply for the onboard computer. The onboard computer can communicate with flight controller with FTDI board that converts between usb data and serial data from the telemetry port, and base station can communicate with onboard computer via WiFi as the user interface for autonomous missions. Then, flight controller will deliver calculated MAIN PWM signals to ESC, and ESC will supply designed voltage to rotors to make the quadcopter fly. In addition, flight controller can also communicate with the radio reciever powered by itself, and radio reciever will communicate with radio controller, which will serve as the second user interface. In situations when emergency shutdown/human takeover is needed, radio transmitter can be used to fly the quadcopter manually.
+Shown in figure below, there are two modules for the system, the quadcopter module and the ground vehicle module. Quadcopter module is powered up by the 4s-lipo battery, which will delivered power to BEC, which will help to deliver power to all devices. Battery power will also go through buck converter to have a stable voltage supply for the onboard computer. The onboard computer can communicate with flight controller with FTDI board that converts between usb data and serial data from the telemetry port, and base station can communicate with onboard computer via WiFi as the user interface for autonomous missions. Then, flight controller will deliver calculated MAIN PWM signals to ESC, and ESC will supply designed voltage to rotors to make the quadcopter fly. In addition, flight controller can also communicate with the radio reciever powered by itself, and radio reciever will communicate with radio controller, which will serve as the second user interface. In situations when emergency shutdown/human takeover is needed, radio transmitter can be used to fly the quadcopter manually.
 
 <p align="center">
   <img src="https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/main/figures/hardware%20structure.png" width=70% height=70% alt>
 </p>
+
+The built quadcopter module is shown below.
+
+<p align="center">
+  <img src="https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/main/figures/quadcopter.jpeg" width=70% height=70% alt>
+</p>
+
 
 In the bill of material below, we provide some items in the system that we choose to use. Details for the requirement of radio receiver and trasmitter are given by [PX4 tutorials](https://docs.px4.io/main/en/getting_started/rc_transmitter_receiver.html).
 
@@ -27,13 +34,9 @@ USB Dock | 1 | [Amazon](https://www.amazon.com/Hub%EF%BC%8CVENTION-Ultra-Slim-Sp
 WiFi Antenna | 1 | [Up Shop](https://up-shop.org/up-core-wifi-antenna-kit.html)
 Quadcopter Camera | 1 | [ArduCam](https://www.amazon.com/Arducam-Camera-Microphone-Windows-Android/dp/B09SHKWXB3/ref=sr_1_15?crid=37X4AFQZOKX3J&keywords=arducam&qid=1658869230&sprefix=arducam%2Caps%2C77&sr=8-15&ufe=app_do%3Aamzn1.fos.006c50ae-5d4c-4777-9bc0-4513d670b6bc&th=1)
 
-
-
-
-
 ### Software
 
-The functionality of the system can only be achieved by having multiple agents running synchronously. 
+The functionality of the system can only be achieved by having multiple agents running synchronously. Shown in the figure below, ROS on the onboard computer will serve as human interface to control the quadcopter. Users can use multi-ROS under same ROS master to achieve remote control of onboard computer, or simply ssh into the computer to achieve remote control. Then
 
 ## Resources
 
