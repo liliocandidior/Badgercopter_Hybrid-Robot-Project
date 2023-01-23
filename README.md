@@ -42,9 +42,24 @@ The functionality of the system can only be achieved by having multiple agents r
   <img src="https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/main/figures/communication.png" width=70% height=70% alt>
 </p>
 
+Therefore, there are several items need to be setup to make system works: the firmware of the PX4 flight controller, the onboard computer with ROS-PX4 package, and base station computer that is able to communicate with onboard computer in same ROS Master.
+
 ## Resources
 
+Reminder 1: PX4 tutorial might be different for different versions of flight controller firmware. For most of the pages in the doc, please change "main" to "v1.12" or "v1.13" for different versions of firmware. (Introduction URL: https://docs.px4.io/main/en/)
+
 ### PX4
+
+1. Part Selection: Please check the links below to select appropriate part for the quadcopter, that meet either software criteria or mechanical need.
+  Check "[Getting Started](https://docs.px4.io/main/en/getting_started/)" to know the concepts of the whole system.
+  Check "[Basic Assembly](https://docs.px4.io/main/en/assembly/)" to know the electrical structure of the system.
+  Check "[Airframe/Vehicle Builds](https://docs.px4.io/main/en/airframes/)" to know the mechanical structure of the system.
+  Check "[Drones & Drone Parts](https://docs.px4.io/main/en/airframes/)" to know the criteria to select the accessories.
+
+
+
+
+### Onboard Computer
 
 ### Motion Capture
 
