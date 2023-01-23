@@ -72,7 +72,9 @@ Reminder 1: PX4 tutorial might be different for different versions of flight con
 
 2. Please choose Ubuntu version wisely! Different Ubuntu versions are strickly required by different ROS versions, either ROS 1 or 2, or different versions within ROS 1, either melodic and noetic. Using different versions of PX4 firmware might restrict different PX4-ROS packages you might choose, which are based on different ROS versions. Please do everything before you have adequate understanding of the whole system, and make reasonable choices of which version of firmware, package, and system you want to use.
 
-3. Check two other branches in this repo ([PX4-ROS1](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS1-Bridge/README.md) and [PX4-ROS2](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS2-Bridge/README.md)) for detailed reminders of PX4-ROS package implementation onto onboard computer. For the full official instruction, please check [PX4 official ROS guide](https://docs.px4.io/main/en/ros/).
+3. Check other branches in this repo ([PX4-ROS2](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS2-Bridge/README.md)) for detailed reminders of PX4-ROS package implementation onto onboard computer. For the full official instruction, please check [PX4 official ROS guide](https://docs.px4.io/main/en/ros/).
+
+
 
 ### Motion Capture
 
@@ -82,3 +84,4 @@ Reminder 1: PX4 tutorial might be different for different versions of flight con
   4. Build the ROS interface package to get data onto ROS. Here we strongly recommend to build the motion capture ROS interface onto the onboard computer, which has lower risks on data transmission and network issues. The detailed tutorial is [here](http://wiki.ros.org/mocap_optitrack).
   5. DEBUG: There could be several issues when you try to run this code according to the tutorial, and since there are network isssues getting involved, and the package itself is already obsolete, it is hard to find a starting point to debug. A good way to look into it is by get things figured out level by level, instead of trying randomly. Firstly, please make sure you have a trustworthy network to deliver your data, and having incorrect network configurations or inappropriate networks will block the workflow. Then, make sure you are editting the correct config file, and this file is correctly loaded as rosparams, and please read the returned message carefully when you run the program (does it change when you modify your config file, or it is just not loaded yet). Lastly, make sure there is data inside the published rostopics, and, if not, please check issues with hostnames and firewall issues.
   6. Run the program by `roslaunch mocap_optitrack mocap.launch`, and you should see states have been published correctly in designated rostopics.
+  7. A sample offboard ROS node is attached in this directory, which shows the quadcopter will track the vehicle with mocap marker on the ground, but 0.5 m higher.
