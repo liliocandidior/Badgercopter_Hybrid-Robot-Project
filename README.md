@@ -68,13 +68,17 @@ Reminder 1: PX4 tutorial might be different for different versions of flight con
 
 ### Onboard Computer
 
-  Check two other branches in this repo for detailed reminders of PX4-ROS package implementation onto onboard computer.
+1. Setup Ubuntu for the companion computer. Detailed instruction specifically on UpCore companion computer is detailed in this [link](https://github.com/up-board/up-community/wiki/Ubuntu_20.04). Please also enable all the avaliable ports if transmissions are blocked.
+
+2. Please choose Ubuntu version wisely! Different Ubuntu versions are strickly required by different ROS versions, either ROS 1 or 2, or different versions within ROS 1, either melodic and noetic. Using different versions of PX4 firmware might restrict different PX4-ROS packages you might choose, which are based on different ROS versions. Please do everything before you have adequate understanding of the whole system, and make reasonable choices of which version of firmware, package, and system you want to use.
+
+2.Check two other branches in this repo ([PX4-ROS1](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS1-Bridge/README.md) and [PX4-ROS2](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS2-Bridge/README.md)) for detailed reminders of PX4-ROS package implementation onto onboard computer.
 
 
 ### Motion Capture
 
 
 ### Ubuntu
-https://github.com/up-board/up-community/wiki/Ubuntu_20.04
+
 
 skip HAT -- cannnot locate upboard-extras
