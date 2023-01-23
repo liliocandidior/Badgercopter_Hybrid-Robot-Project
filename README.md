@@ -61,10 +61,10 @@ Reminder 1: PX4 tutorial might be different for different versions of flight con
   Check "[Flying](https://docs.px4.io/main/en/flying/)" for detailed instructions about flying the quadcopter. <br/>
   Check "[Flight Log Analysis](https://docs.px4.io/main/en/log/flight_log_analysis.html)" if glying doesn't go as expected. You may find important records in flying, like PWM signal variations for each ESC. <br/>
 
-3. After making sure the quadcopter is able to fly with manual control over radio, in the next step we will make the quadcopter flight controller prepared to take ROS-enabled autonmous control over onboard computer and base station. Here we strongly recommended to use ROS 1 wth v1.12 firmware. ROS 2 is recommended by the official but do not have a stable release so far. Previous versions of firmware might yeild errors with ROS 1, which is a commonly reported issue by other users too.
-  Check "[Drone Apps and APIs](https://docs.px4.io/main/en/robotics/)" for the detailed implementation of remote control of drones.
-  The recommanded roadmap of autonomous remote control is detailed in this [link](https://docs.px4.io/main/en/ros/offboard_control.html#on-board-processor-and-wifi-link-to-ros-recommended).
-  Check "[Companion Computer](https://docs.px4.io/main/en/companion_computer/#companion-computer-software)" section for the instructions to setup firmware with companion computer.
+3. After making sure the quadcopter is able to fly with manual control over radio, in the next step we will make the quadcopter flight controller prepared to take ROS-enabled autonmous control over onboard computer and base station. Here we strongly recommended to use ROS 1 wth v1.12 firmware. ROS 2 is recommended by the official but do not have a stable release so far. Previous versions of firmware might yeild errors with ROS 1, which is a commonly reported issue by other users too. <br/>
+  Check "[Drone Apps and APIs](https://docs.px4.io/main/en/robotics/)" for the detailed implementation of remote control of drones. <br/>
+  The recommanded roadmap of autonomous remote control is detailed in this [link](https://docs.px4.io/main/en/ros/offboard_control.html#on-board-processor-and-wifi-link-to-ros-recommended). <br/>
+  Check "[Companion Computer](https://docs.px4.io/main/en/companion_computer/#companion-computer-software)" section for the instructions to setup firmware with companion computer. <br/>
 
 ### Onboard Computer
 
