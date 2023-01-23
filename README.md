@@ -95,18 +95,6 @@
 
   Calibration << arducam_calibration.yml
 
-### Python Script for Marker Detection
-
-### C++ Program for Marker Tracking
-
-### Connection with Mavlink
-
-### Vitual Gazebo Testing
-
-### Real World Manual Testing
-
-### Real World Autonomous Testing
-
 ### References
 
 https://github.com/goodrobots/vision_landing
