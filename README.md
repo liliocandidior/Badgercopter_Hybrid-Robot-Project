@@ -72,13 +72,14 @@ Reminder 1: PX4 tutorial might be different for different versions of flight con
 
 2. Please choose Ubuntu version wisely! Different Ubuntu versions are strickly required by different ROS versions, either ROS 1 or 2, or different versions within ROS 1, either melodic and noetic. Using different versions of PX4 firmware might restrict different PX4-ROS packages you might choose, which are based on different ROS versions. Please do everything before you have adequate understanding of the whole system, and make reasonable choices of which version of firmware, package, and system you want to use.
 
-2.Check two other branches in this repo ([PX4-ROS1](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS1-Bridge/README.md) and [PX4-ROS2](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS2-Bridge/README.md)) for detailed reminders of PX4-ROS package implementation onto onboard computer.
+2.Check two other branches in this repo ([PX4-ROS1](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS1-Bridge/README.md) and [PX4-ROS2](https://github.com/liliocandidior/Badgercopter_Hybrid-Robot-Project/blob/PX4-ROS2-Bridge/README.md)) for detailed reminders of PX4-ROS package implementation onto onboard computer. For the full official instruction, please check [PX4 official ROS guide](https://docs.px4.io/main/en/ros/).
 
 
 ### Motion Capture
 
-
-### Ubuntu
-
-
-skip HAT -- cannnot locate upboard-extras
+  1. Open Motive software on the base station, and if icons of all cameras are not in their appropriate positions, please re-calibrate the camera positions with following [the tutorial](https://docs.optitrack.com/motive/calibration). 
+  2. Make sure the body for the vehicle is built with appropirate orientations, and this assest is on in the space.
+  3. Make sure the base station is connected to the appropriate network, same for the onboard computer. Here we strongly recommend to use ARCLab_WIFI instead of UWNet to avoid network issues. Also, in the streaming and network settings, please set the correct Local Interface IP. If you are not sure, please do `ip config` in Windows Command Prompt to check the different IP addresses for different networks.
+  4. Build the ROS interface package to get data onto ROS. Here we strongly recommend to build the motion capture ROS interface onto the onboard computer, which has lower risks on data transmission and network issues. The detailed tutorial is [here](http://wiki.ros.org/mocap_optitrack).
+  5. DEBUG: There could be several issues when you try to run this code according to the tutorial, and since there are network isssues getting involved, and the package itself is already obsolete, it is hard to find a starting point to debug. A good way to look into it is by get things figured out level by level, instead of trying randomly. Firstly, please make sure you have a trustworthy network to deliver your data, and having incorrect network configurations or inappropriate networks will block the workflow. Then, make sure you are editting the correct config file, and this file is correctly loaded as rosparams, and please read the returned message carefully when you run the program (does it change when you modify your config file, or it is just not loaded yet). Lastly, make sure there is data inside the published rostopics, and, if not, please check issues with hostnames and firewall issues.
+  6. Run the program by `roslaunch mocap_optitrack mocap.launch`, and you should see states have been published correctly in designated rostopics.
