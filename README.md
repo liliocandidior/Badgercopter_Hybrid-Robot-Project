@@ -50,14 +50,16 @@ Reminder 1: PX4 tutorial might be different for different versions of flight con
 
 ### PX4
 
-1. Part Selection: Please check the links below to select appropriate part for the quadcopter, that meet either software criteria or mechanical need.
-  Check "[Getting Started](https://docs.px4.io/main/en/getting_started/)" to know the concepts of the whole system.
-  Check "[Basic Assembly](https://docs.px4.io/main/en/assembly/)" to know the electrical structure of the system.
-  Check "[Airframe/Vehicle Builds](https://docs.px4.io/main/en/airframes/)" to know the mechanical structure of the system.
+To prepare a ready-to-use quadcopter, necessary parts need to be selected. Please check the links below to select appropriate part for the quadcopter, that meet either software criteria or mechanical need.<br/>
+  Check "[Getting Started](https://docs.px4.io/main/en/getting_started/)" to know the concepts of the whole system.<br/>
+  Check "[Basic Assembly](https://docs.px4.io/main/en/assembly/)" to know the electrical structure of the system.<br/>
+  Check "[Airframe/Vehicle Builds](https://docs.px4.io/main/en/airframes/)" to know the mechanical structure of the system.<br/>
   Check "[Drones & Drone Parts](https://docs.px4.io/main/en/airframes/)" to know the criteria to select the accessories.
 
-
-
+Then, tune the important parameters for the flight controller firmware based on the links below. After this step, the quadcopter should be ready to fly manually using radio transmitter or using joystick over QGroundControl. <br/>
+  Check "[Standard Configuration](https://docs.px4.io/main/en/config/)" for the basic configuration of the firmware for manual flying using radio. <br/>
+  Check "[Flying](https://docs.px4.io/main/en/flying/)" for detailed instructions about flying the quadcopter. <br/>
+  Check "[Flight Log Analysis](https://docs.px4.io/main/en/log/flight_log_analysis.html)" if glying doesn't go as expected. You may find important records in flying, like PWM signal variations for each ESC. <br/>
 
 ### Onboard Computer
 
